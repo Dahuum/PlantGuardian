@@ -5,7 +5,7 @@
   "main": "server_integrated.js",
   "scripts": {
     "start": "node server_integrated.js",
-    "build": "echo 'no need',
+    "build": "echo 'No build step necessary'",
     "dev": "NODE_ENV=development node server_integrated.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
