@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 50% 98%;
+    --foreground: 150 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 50% 10%;
+
+    --primary: 150 60% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 20% 95%;
+    --secondary-foreground: 150 50% 10%;
+
+    --muted: 150 20% 95%;
+    --muted-foreground: 150 30% 40%;
+
+    --accent: 150 20% 95%;
+    --accent-foreground: 150 50% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 30% 90%;
+    --input: 150 30% 90%;
+    --ring: 150 60% 40%;
+
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom font for headings */
+.font-display {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+/* Custom progress bar colors */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(52, 211, 153, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(52, 211, 153, 0.7);
+}
